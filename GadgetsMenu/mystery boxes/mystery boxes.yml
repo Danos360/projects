@@ -1,0 +1,565 @@
+Mystery-Boxes:
+  Enabled: true
+  Loots-Can-Be-Found:
+    Hats: true
+    Animated Hats: true
+    Particles: true
+    Suits: true
+    Gadgets: true
+    Pets: true
+    Banners: true
+    Morphs: true
+    Emotes: true
+    Cloaks: true
+  Chances:
+    One-Star:
+      Common: 70
+      Rare: 15
+      Epic: 10
+      Legendary: 5
+    Two-Star:
+      Common: 64
+      Rare: 18
+      Epic: 12
+      Legendary: 6
+    Three-Star:
+      Common: 58
+      Rare: 20
+      Epic: 15
+      Legendary: 7
+    Four-Star:
+      Common: 52
+      Rare: 22
+      Epic: 18
+      Legendary: 8
+    Five-Star:
+      Rare: 40
+      Epic: 50
+      Legendary: 10
+  Rarity:
+    Common: '&aנפוץ'
+    Rare: '&9נדיר'
+    Epic: '&5מדהים'
+    Legendary: '&6אגדי'
+  Execute-Command: lp user {PLAYER} permission set {PERMISSION} true
+  Found-Loot:
+    Common:
+      Play-Sound:
+        Enabled: true
+        Sound: ENTITY_CHICKEN_EGG
+      Send-Message:
+        Enabled: true
+        Message:
+        - ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+        - '             &b&lקופסות הקסם'
+        - ''
+        - '  &7השגת את הקוסמג''יק!'
+        - '  &71x &a&lנפוץ {LOOT}'
+        - ''
+        - ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+    Rare:
+      Play-Sound:
+        Enabled: true
+        Sound: ENTITY_VILLAGER_AMBIENT
+      Send-Message:
+        Enabled: true
+        Message:
+        - ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+        - '             &b&lקופסות הקסם'
+        - ''
+        - '  &7השגת את הקוסמג''יק!'
+        - '  &71x &9&lנדיר {LOOT}'
+        - ''
+        - ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+    Epic:
+      Play-Sound:
+        Enabled: true
+        Sound: ENTITY_PLAYER_LEVELUP
+      Send-Message:
+        Enabled: true
+        Message:
+        - ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+        - '             &b&lקופסות הקסם'
+        - ''
+        - '  &7השגת את הקוסמג''יק!'
+        - '  &71x &5&lמדהים {LOOT}'
+        - ''
+        - ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+    Legendary:
+      Play-Sound:
+        Enabled: true
+        Sound: ENTITY_ENDER_DRAGON_AMBIENT
+      Send-Message:
+        Enabled: true
+        Message:
+        - ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+        - '             &b&lקופסות הקסם'
+        - ''
+        - '  &7השגת את הקוסמג''יק!'
+        - '  &71x &6&lאגדי {LOOT}'
+        - ''
+        - ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+  Already-Had-Loot:
+    Common:
+      Give-Mystery-Dust:
+        Enabled: false
+        Min: 1
+        Max: 3
+      Send-Message:
+        Enabled: false
+        Message:
+        - '&7היה לך כבר &aנפוץ {LOOT} &7אז'
+        - '&7קיבלת &a{MYSTERY_DUST} חלקי קסם &7במקום.'
+      Execute-Command:
+        Enabled: false
+        Command: eco give {PLAYER} 2
+    Rare:
+      Give-Mystery-Dust:
+        Enabled: false
+        Min: 4
+        Max: 8
+      Send-Message:
+        Enabled: false
+        Message:
+        - '&7היה לך כבר &aנדיר {LOOT} &7אז'
+        - '&7קיבלת &a{MYSTERY_DUST} חלקי קסם &7במקום.'
+      Execute-Command:
+        Enabled: false
+        Command: eco give {PLAYER} 5
+    Epic:
+      Give-Mystery-Dust:
+        Enabled: false
+        Min: 9
+        Max: 25
+      Send-Message:
+        Enabled: false
+        Message:
+        - '&7היה לך כבר &aמדהים {LOOT} &7אז'
+        - '&7קיבלת &a{MYSTERY_DUST} חלקי קסם &7במקום.'
+      Execute-Command:
+        Enabled: false
+        Command: eco give {PLAYER} 8
+    Legendary:
+      Give-Mystery-Dust:
+        Enabled: false
+        Min: 26
+        Max: 36
+      Send-Message:
+        Enabled: false
+        Message:
+        - '&7היה לך כבר &aאגדי {LOOT} &7אז'
+        - '&7קיבלת &a{MYSTERY_DUST} חלקי קסם &7במקום.'
+      Execute-Command:
+        Enabled: false
+        Command: eco give {PLAYER} 12
+  Holograms:
+    Found-Loot:
+      Common: '&aנפוץ {LOOT}'
+      Rare: '&9נדיר {LOOT}'
+      Epic: '&5מדהים {LOOT}'
+      Legendary: '&6אגדי {LOOT}'
+    Mystery-Vault:
+      Line-1: '&bמכונת הקסם'
+      Line-2: '&e&lלחץ מקש ימני'
+    Individual-Holograms:
+      Enabled: true
+      Available-Mystery-Boxes:
+      - '&c{MYSTERY_BOXES} קופסת קסם זמינה'
+      - '&f{MYSTERY_BOXES} קופסות קסם זמינות'
+      Zero-Mystery-Box-Available: '&cאין לך אף קופסות קסם'
+    Hologram-Height: 1.21
+  Broadcast:
+    Opening-Mystery-Box:
+      Enabled: true
+      Message: '&7השחקן &7{PLAYER} &rפותח קופסת קסם!'
+    Found-Loot:
+      Common:
+        Enabled: true
+        Message: '&7השחקן &7{PLAYER} &rהשיג את &aנפוץ {LOOT}&r!'
+      Rare:
+        Enabled: true
+        Message: '&7השחקן &7{PLAYER} &rהשיג את &aנדיר {LOOT}&r!'
+      Epic:
+        Enabled: true
+        Message: '&7השחקן &7{PLAYER} &rהשיג את &aמדהים {LOOT}&r!'
+      Legendary:
+        Enabled: true
+        Message: '&7השחקן &7{PLAYER} &rהשיג את &aאגדי {LOOT}&r!'
+    Found-Mystery-Box:
+      One-Star:
+        Enabled: true
+        Message: '{PLAYER} &fמצא &e✰&7✰✰✰✰ &fקופסת קסם!'
+      Two-Star:
+        Enabled: true
+        Message: '{PLAYER} &fמצא a &e✰✰&7✰✰✰ &fקופסת קסם!'
+      Three-Star:
+        Enabled: true
+        Message: '{PLAYER} &fמצא a &e✰✰✰&7✰✰ &fקופסת קסם!'
+      Four-Star:
+        Enabled: true
+        Message: '{PLAYER} &fמצא a &e✰✰✰✰&7✰ &fקופסת קסם!'
+      Five-Star:
+        Enabled: true
+        Message: '{PLAYER} &fמצא a &e✰✰✰✰✰ &fקופסת קסם!'
+  Mystery-Boxes-Reward:
+    Enabled: true
+    Allow-AFK: false
+    Chance-To-Get-Mystery-Box: 75
+    Chance:
+      One-Star: 5
+      Two-Star: 10
+      Three-Star: 60
+      Four-Star: 20
+      Five-Star: 5
+    Play-Time:
+      Hours: 0
+      Minutes: 40
+      Seconds: 0
+    Enabled-Worlds:
+    - '*'
+    Message:
+      One-Star: '&fמצאת קופסת קסם בעלת דירוג &e✰&7✰✰✰✰!'
+      Two-Star: '&fמצאת קופסת קסם בעלת דירוג &e✰✰&7✰✰✰!'
+      Three-Star: '&fמצאת קופסת קסם בעלת דירוג &e✰✰✰&7✰✰!'
+      Four-Star: '&fמצאת קופסת קסם בעלת דירוג &e✰✰✰✰&7✰!'
+      Five-Star: '&fמצאת קופסת קסם בעלת דירוג &e✰✰✰✰✰!'
+  Types:
+    Normal-Mystery-Box:
+      One-Star:
+        Name: '&aקופסת קסם'
+        Material: ENDER_CHEST
+        Lore:
+        - '&7קופסת הקסם הזאת מכילה את הקוסמג''יקס הבאים'
+        - ''
+        - '&aפשוט {ITEM_ONE}'
+        - '&aפשוט {ITEM_TWO}'
+        - '&aפשוט {ITEM_THREE}'
+        - '&aפשוט {ITEM_FOUR}'
+        - '&9נדיר {ITEM_FIVE}'
+        - '&5מדהים {ITEM_SIX}'
+        - '&6אגדי {ITEM_SEVEN}'
+        - ''
+        - '&7דירוג: &e✰&7✰✰✰✰'
+        - '{EXPIRY_DATE}'
+        - ''
+        - '&eClick to open!'
+      Two-Star:
+        Name: '&aקופסת קסם'
+        Material: ENDER_CHEST
+        Lore:
+        - '&7קופסת הקסם הזאת מכילה את הקוסמג''יקס הבאים'
+        - ''
+        - '&aפשוט {ITEM_ONE}'
+        - '&aפשוט {ITEM_TWO}'
+        - '&aפשוט {ITEM_THREE}'
+        - '&9נדיר {ITEM_FOUR}'
+        - '&9נדיר {ITEM_FIVE}'
+        - '&5מדהים {ITEM_SIX}'
+        - '&6אגדי {ITEM_SEVEN}'
+        - ''
+        - '&7דירוג: &e✰✰&7✰✰✰'
+        - '{EXPIRY_DATE}'
+        - ''
+        - '&eלחץ כדי לפתוח!'
+      Three-Star:
+        Name: '&aקופסת קסם'
+        Material: ENDER_CHEST
+        Lore:
+        - '&7קופסת הקסם הזאת מכילה את הקוסמג''יקס הבאים'
+        - ''
+        - '&aפשוט {ITEM_ONE}'
+        - '&aפשוט {ITEM_TWO}'
+        - '&9נדיר {ITEM_THREE}'
+        - '&9נדיר {ITEM_FOUR}'
+        - '&5מדהים {ITEM_FIVE}'
+        - '&5מדהים {ITEM_SIX}'
+        - '&6אגדי {ITEM_SEVEN}'
+        - ''
+        - '&7דירוג: &e✰✰✰&7✰✰'
+        - '{EXPIRY_DATE}'
+        - ''
+        - '&eלחץ כדי לפתוח!'
+      Four-Star:
+        Name: '&aקופסת קסם'
+        Material: ENDER_CHEST
+        Lore:
+        - '&7קופסת הקסם הזאת מכילה את הקוסמג''יקס הבאים'
+        - ''
+        - '&aפשוט {ITEM_ONE}'
+        - '&9נדיר {ITEM_TWO}'
+        - '&5מדהים {ITEM_THREE}'
+        - '&5מדהים {ITEM_FOUR}'
+        - '&6אגדי {ITEM_FIVE}'
+        - '&6אגדי {ITEM_SIX}'
+        - '&6אגדי {ITEM_SEVEN}'
+        - ''
+        - '&7דירוג: &e✰✰✰✰&7✰'
+        - '{EXPIRY_DATE}'
+        - ''
+        - '&eלחץ כדי לפתוח!'
+      Five-Star:
+        Name: '&aקופסת קסם'
+        Material: ENDER_CHEST
+        Lore:
+        - '&7קופסת הקסם הזאת מכילה את הקוסמג''יקס הבאים'
+        - ''
+        - '&9נדיר {ITEM_ONE}'
+        - '&5מדהים {ITEM_TWO}'
+        - '&5מדהים {ITEM_THREE}'
+        - '&6אגדי {ITEM_FOUR}'
+        - '&6אגדי {ITEM_FIVE}'
+        - '&6אגדי {ITEM_SIX}'
+        - '&6אגדי {ITEM_SEVEN}'
+        - ''
+        - '&7דירוג: &e✰✰✰✰✰'
+        - '{EXPIRY_DATE}'
+        - ''
+        - '&eלחץ כדי לפתוח!'
+      Messages:
+        Expiry-Date: '&cהקופסה פגה תוקף בעוד {EXPIRY_DATE}'
+        Never-Expired: '&7לקופסה אין תוקף תפוגה.'
+    Gifted-Mystery-Box:
+      One-Star:
+        Name: '&dקופסת קסם במתנה'
+        Material: ENDER_CHEST
+        Lore:
+        - '&7קופסת הקסם הזאת מכילה את הקוסמג''יקס הבאים'
+        - ''
+        - '&aפשוט {ITEM_ONE}'
+        - '&aפשוט {ITEM_TWO}'
+        - '&aפשוט {ITEM_THREE}'
+        - '&aפשוט {ITEM_FOUR}'
+        - '&9נדיר {ITEM_FIVE}'
+        - '&5מדהים {ITEM_SIX}'''
+        - '&6אגדי {ITEM_SEVEN}'
+        - ''
+        - '&7דירוג: &e✰&7✰✰✰✰'
+        - ''
+        - '&7קיבלת את המתנה הזאת מהשחקן:'
+        - '&7{SENDER}'
+        - ''
+        - '&eלחץ כדי לפתוח!'
+      Two-Star:
+        Name: '&dקופסת קסם במתנה'
+        Material: ENDER_CHEST
+        Lore:
+        - '&7קופסת הקסם הזאת מכילה את הקוסמג''יקס הבאים'
+        - ''
+        - '&aפשוט {ITEM_ONE}'
+        - '&aפשוט {ITEM_TWO}'
+        - '&aפשוט {ITEM_THREE}'
+        - '&9נדיר {ITEM_FOUR}'
+        - '&9נדיר {ITEM_FIVE}'
+        - '&5מדהים {ITEM_SIX}'
+        - '&6אגדי {ITEM_SEVEN}'
+        - ''
+        - '&7דירוג: &e✰✰&7✰✰✰'
+        - ''
+        - '&7קיבלת את המתנה הזאת מהשחקן:'
+        - '&7{SENDER}'
+        - ''
+        - '&eלחץ כדי לפתוח!'
+      Three-Star:
+        Name: '&dקופסת קסם במתנה'
+        Material: ENDER_CHEST
+        Lore:
+        - '&7קופסת הקסם הזאת מכילה את הקוסמג''יקס הבאים'
+        - ''
+        - '&aפשוט {ITEM_ONE}'
+        - '&aפשוט {ITEM_TWO}'
+        - '&9נדיר {ITEM_THREE}'
+        - '&9נדיר {ITEM_FOUR}'
+        - '&5מדהים {ITEM_FIVE}'
+        - '&5מדהים {ITEM_SIX}'
+        - '&6אגדי {ITEM_SEVEN}'
+        - ''
+        - '&7דירוג: &e✰✰✰&7✰✰'
+        - ''
+        - '&7קיבלת את המתנה הזאת מהשחקן:'
+        - '&7{SENDER}'
+        - ''
+        - '&eלחץ כדי לפתוח!'
+      Four-Star:
+        Name: '&dקופסת קסם במתנה'
+        Material: ENDER_CHEST
+        Lore:
+        - '&7קופסת הקסם הזאת מכילה את הקוסמג''יקס הבאים'
+        - ''
+        - '&aפשוט {ITEM_ONE}'
+        - '&9נדיר {ITEM_TWO}'
+        - '&5מדהים {ITEM_THREE}'
+        - '&5מדהים {ITEM_FOUR}'
+        - '&6אגדי {ITEM_FIVE}'
+        - '&6אגדי {ITEM_SIX}'
+        - '&6אגדי {ITEM_SEVEN}'
+        - ''
+        - '&7דירוג: &e✰✰✰✰&7✰'
+        - ''
+        - '&7קיבלת את המתנה הזאת מהשחקן:'
+        - '&7{SENDER}'
+        - ''
+        - '&eלחץ כדי לפתוח!'
+      Five-Star:
+        Name: '&dקופסת קסם במתנה'
+        Material: ENDER_CHEST
+        Lore:
+        - '&7קופסת הקסם הזאת מכילה את הקוסמג''יקס הבאים'
+        - ''
+        - '&9נדיר {ITEM_ONE}'
+        - '&5מדהים {ITEM_TWO}'
+        - '&5מדהים {ITEM_THREE}'
+        - '&6אגדי {ITEM_FOUR}'
+        - '&6אגדי {ITEM_FIVE}'
+        - '&6אגדי {ITEM_SIX}'
+        - '&6אגדי {ITEM_SEVEN}'
+        - ''
+        - '&7דירוג: &e✰✰✰✰✰'
+        - ''
+        - '&7קיבלת את המתנה הזאת מהשחקן:'
+        - '&7{SENDER}'
+        - ''
+        - '&eלחץ כדי לפתוח!'
+    Crafted-Mystery-Box:
+      One-Star:
+        Name: '&bקופסת קסם - פשוט'
+        Material: ENDER_CHEST
+        Lore:
+        - '&7קופסת הקסם הזאת מכילה את הקוסמג''יקס הבאים'
+        - ''
+        - '&aפשוט {ITEM_ONE}'
+        - '&aפשוט {ITEM_TWO}'
+        - '&aפשוט {ITEM_THREE}'
+        - '&aפשוט {ITEM_FOUR}'
+        - '&9נדיר {ITEM_FIVE}'
+        - '&5מדהים {ITEM_SIX}'
+        - '&6אגדי {ITEM_SEVEN}'
+        - ''
+        - '&7דירוג: &e✰&7✰✰✰✰'
+        - '&bנוצר בתאריך {DATE}'
+        - ''
+        - '&eלחץ כדי לפתוח!'
+      Two-Star:
+        Name: '&bקופסת קסם - רגילה'
+        Material: ENDER_CHEST
+        Lore:
+        - '&7קופסת הקסם הזאת מכילה את הקוסמג''יקס הבאים'
+        - ''
+        - '&aפשוט {ITEM_ONE}'
+        - '&aפשוט {ITEM_TWO}'
+        - '&aפשוט {ITEM_THREE}'
+        - '&9נדיר {ITEM_FOUR}'
+        - '&9נדיר {ITEM_FIVE}'
+        - '&5מדהים {ITEM_SIX}'
+        - '&6אגדי {ITEM_SEVEN}'
+        - ''
+        - '&7דירוג: &e✰✰&7✰✰✰'
+        - '&bנוצר בתאריך {DATE}'
+        - ''
+        - '&eלחץ כדי לפתוח!'
+      Three-Star:
+        Name: '&bקופסת קסם - נדירה'
+        Material: ENDER_CHEST
+        Lore:
+        - '&7קופסת הקסם הזאת מכילה את הקוסמג''יקס הבאים'
+        - ''
+        - '&aפשוט {ITEM_ONE}'
+        - '&aפשוט {ITEM_TWO}'
+        - '&9נדיר {ITEM_THREE}'
+        - '&9נדיר {ITEM_FOUR}'
+        - '&5מדהים {ITEM_FIVE}'
+        - '&5מדהים {ITEM_SIX}'
+        - '&6אגדי {ITEM_SEVEN}'
+        - ''
+        - '&7דירוג: &e✰✰✰&7✰✰'
+        - '&bנוצר בתאריך {DATE}'
+        - ''
+        - '&eלחץ כדי לפתוח!'
+      Four-Star:
+        Name: '&bקופסת קסם - מדהימה'
+        Material: ENDER_CHEST
+        Lore:
+        - '&7קופסת הקסם הזאת מכילה את הקוסמג''יקס הבאים'
+        - ''
+        - '&aפשוט {ITEM_ONE}'
+        - '&9נדיר {ITEM_TWO}'
+        - '&5מדהים {ITEM_THREE}'
+        - '&5מדהים {ITEM_FOUR}'
+        - '&6אגדי {ITEM_FIVE}'
+        - '&6אגדי {ITEM_SIX}'
+        - '&6אגדי {ITEM_SEVEN}'
+        - ''
+        - '&7דירוג: &e✰✰✰✰&7✰'
+        - '&bנוצר בתאריך {DATE}'
+        - ''
+        - '&eלחץ כדי לפתוח!'
+      Five-Star:
+        Name: '&bקופסת קסם - אגדית'
+        Material: ENDER_CHEST
+        Lore:
+        - '&7קופסת הקסם הזאת מכילה את הקוסמג''יקס הבאים'
+        - ''
+        - '&9נדיר {ITEM_ONE}'
+        - '&5מדהים {ITEM_TWO}'
+        - '&5מדהים {ITEM_THREE}'
+        - '&6אגדי {ITEM_FOUR}'
+        - '&6אגדי {ITEM_FIVE}'
+        - '&6אגדי {ITEM_SIX}'
+        - '&6אגדי {ITEM_SEVEN}'
+        - ''
+        - '&7דירוג: &e✰✰✰✰✰'
+        - '&bנוצר בתאריך {DATE}'
+        - ''
+        - '&eלחץ כדי לפתוח!'
+  JSON-Messages:
+    Found-Mystery-Box:
+      One-Star:
+        Name: '&bקופסת קסם'
+        Lore:
+        - '&7דירוג: &e✰&7✰✰✰✰'
+        - '&7תוכל להשיג את קופסת הקסם הזאת &7על ידי'
+        - '&7לשחק במשחקי השרת.'
+      Two-Star:
+        Name: '&bקופסת קסם'
+        Lore:
+        - '&7דירוג: &e✰✰&7✰✰✰'
+        - '&7תוכל להשיג את קופסת הקסם הזאת &7על ידי'
+        - '&7לשחק במשחקי השרת.'
+      Three-Star:
+        Name: '&bקופסת קסם'
+        Lore:
+        - '&7דירוג: &e✰✰✰&7✰✰'
+        - '&7תוכל להשיג את קופסת הקסם הזאת &7על ידי'
+        - '&7לשחק במשחקי השרת.'
+      Four-Star:
+        Name: '&bקופסת קסם'
+        Lore:
+        - '&7דירוג: &e✰✰✰✰&7✰'
+        - '&7תוכל להשיג את קופסת הקסם הזאת &7על ידי'
+        - '&7לשחק במשחקי השרת.'
+      Five-Star:
+        Name: '&bקופסת קסם'
+        Lore:
+        - '&7דירוג: &e✰✰✰✰✰'
+        - '&7תוכל להשיג את קופסת הקסם הזאת &7על ידי'
+        - '&7לשחק במשחקי השרת.'
+    Found-Loot:
+      Common:
+        Name: '&aנפוץ {LOOT}'
+        Lore:
+        - '&7סוג: {CATEGORY}'
+        - '&7דירוג: &aנפוץ'
+      Rare:
+        Name: '&9נדיר {LOOT}'
+        Lore:
+        - '&7סוג: {CATEGORY}'
+        - '&7דירוג: &9נדיר'
+      Epic:
+        Name: '&5מדהים {LOOT}'
+        Lore:
+        - '&7סוג: {CATEGORY}'
+        - '&7דירוג: &5מדהים'
+      Legendary:
+        Name: '&6אגדי {LOOT}'
+        Lore:
+        - '&7סוג: {CATEGORY}'
+        - '&7דירוג: &6אגדי'

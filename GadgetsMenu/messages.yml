@@ -1,0 +1,744 @@
+Prefix: '&9&lCosmagic &6» &r'
+GUI-Menus:
+  Main: תפריט הקומסג'יק
+  Hats: תפריט הכובעים
+  Animated Hats: תפריט כובעי אנימציה
+  Particles: תפריט האפקטים
+  Suits: תפריט החליפות
+  Gadgets: תפריט הגאג'דטים
+  Pets: תפריט חיות מחמד
+  Morphs: תפריט שינוי הצורה
+  Banners: תפריט דגלים
+  Emotes: תפריט רגשות
+  Cloaks: תפריט גלימות
+  Purchase-Menu:
+    GUI-Name: אישור קנייה
+    Items:
+      Confirm:
+        Name: '&aאישור'
+        Material: LIME_TERRACOTTA
+        Lore: ''
+      Cancel:
+        Name: '&cביטול'
+        Material: RED_TERRACOTTA
+        Lore: ''
+  Confirm-Open-Mystery-Box-Menu:
+    GUI-Name: פתיחת קוספת קסם
+    Items:
+      Open:
+        Name: '&aאשר'
+        Material: GREEN_WOOL
+        Lore:
+        - '&7פתיחת קוספת קסם'
+        - ''
+        - '&7לא ניתן לחזור אחורה לאחר פתיחה!'
+      Cancel:
+        Name: '&cבטל'
+        Material: RED_WOOL
+        Lore:
+        - '&7ביטול פתיחת קוספת קסם'
+        - '&7חזור לתפריט הקופסות הקסם'
+  Mystery-Vault-Menu:
+    GUI-Name: תפריט הקומסג'יק
+    Items:
+      Error:
+        Name: '&cשגיאה!'
+        Material: RED_STAINED_GLASS_PANE
+        Lore:
+        - '&7אין לך &bקופסות קסם&7'
+      Loading-Mystery-Boxes:
+        Name: '&cטוען...'
+        Material: RED_STAINED_GLASS_PANE
+        Lore:
+        - '&7טוען את התיבות קוסמטיקס שלך!'
+        - '&7אנא פתח מחדש את תפריט הקוסמג''יק.'
+      Mystery-Box-Information:
+        Name: '&aמידע על התיבה'
+        Material: BOOK
+        Slot: 49
+        Lore:
+        - '&bקופסת קסם &7מכילה הרבה קוסמג''יק'
+        - '&7כדי להשיג &bקופסת קסם &7עליך להשיג חלקים'
+        - '&7על ידי הצבעה לשרת\קנייה בחנות'
+        - '&7או לקנות במג''קיל שמשיגים ממשחקים!'
+        - ''
+        - '&7יש לך: &b{MYSTERY_DUST} &7חלקי קסם'
+      Craft-Mystery-Boxes:
+        Name: '&aיצירת קופסת קסם'
+        Material: ANVIL
+        Show: true
+        Slot: 50
+        Lore:
+        - '&7לאחר שיש לך מספיק חלקי קסם ליצירת'
+        - '&bקופסת קסם &7תוכל ליצור סוגים שונים'
+        - '&7של&b קופסת קסם'
+        - ''
+        - '&7יש לך: &b{MYSTERY_DUST} חלקי קסם'
+        - '&eלחץ כדי לפתוח את שולחן היצירה.'
+      Gift-Inventory:
+        Name: '&aמתנות'
+        Material: head:d2ac1c51807e261c12c4f2adbad36b8b2c497c277f7223ec244cb4608c59c
+        Show: true
+        Slot: 48
+        Lore:
+        - '&7שלחו מתנות לחברים שלכם'
+        - '&7וככה תקבלו חברות טובה בחזרה!'
+        - ''
+        - '&7מתנות שקנית יתאחסנו כאן'
+        - ''
+        - '&7מתנות ששלחת: &e{GIFT_SENT}'
+        - '&7מתנות שקיבלת: &e{GIFT_RECEIVED}'
+        - ''
+        - '&eלחץ כדי לראות את המתנות המאוחסנות!'
+      Animations:
+        Name: '&aאנימציות'
+        Material: REDSTONE
+        Show: true
+        Slot: 53
+        Lore:
+        - '&7תבחרו אנימציה'
+        - '&7לפתיחת &bקופסת קסם'
+      Open-Multiple-Boxes:
+        Name: '&cפתיחת כמה &bקופסות קסם &cבמקביל'
+        Material: NETHER_STAR
+        Show: true
+        Slot: 51
+        Lore:
+        - '&7פתיחת כמה &bקופסות קסם'
+        - '&7באותו הזמן!'
+  Mystery-Box-Crafting-Menu:
+    GUI-Name: תפריט יצירת קוספת קסם
+    Items:
+      1-Star:
+        Name: '&aקופסת קסם - פשוט'
+        Material: ENDER_CHEST
+        Price: 7
+        Lore:
+        - '&7מכילה את הפריטים הבאים'
+        - ''
+        - '&aפריטים נפוצים&7: &b4'
+        - '&9פריטים נדירים&7: &b1'
+        - '&5פריטים מדהימים&7: &b1'
+        - '&6פריטים אגדיים&7: &b1'
+        - ''
+        - '&7איכות: &e✰&7✰✰✰✰'
+        Show: true
+        Slot: 9
+      2-Star:
+        Name: '&eקופסת קסם - רגיל'
+        Material: ENDER_CHEST
+        Price: 10
+        Lore:
+        - '&7מכילה את הפריטים הבאים'
+        - ''
+        - '&aפריטים נפוצים&7: &b3'
+        - '&9פריטים נדירים&7: &b2'
+        - '&5פריטים מדהימים&7: &b1'
+        - '&6פריטים אגדיים&7: &b1'
+        - ''
+        - '&7איכות: &e✰✰&7✰✰✰'
+        Show: true
+        Slot: 11
+      3-Star:
+        Name: '&9קופסת קסם - פלוס'
+        Material: ENDER_CHEST
+        Price: 14
+        Lore:
+        - '&7מכילה את הפריטים הבאים'
+        - ''
+        - '&aפריטים נפוצים&7: &b2'
+        - '&9פריטים נדירים&7: &b2'
+        - '&5פריטים מדהימים&7: &b2'
+        - '&6פריטים אגדיים&7: &b1'
+        - ''
+        - '&7איכות: &e✰✰✰&7✰✰'
+        Show: true
+        Slot: 13
+      4-Star:
+        Name: '&5קופסת קסם - מיוחד'
+        Material: ENDER_CHEST
+        Price: 20
+        Lore:
+        - '&7מכילה את הפריטים הבאים'
+        - ''
+        - '&aפריטים נפוצים&7: &b1'
+        - '&9פריטים נדירים&7: &b1'
+        - '&5פריטים מדהימים&7: &b2'
+        - '&6פריטים אגדיים&7: &b3'
+        - ''
+        - '&7איכות: &e✰✰✰✰&7✰'
+        Show: true
+        Slot: 15
+      5-Star:
+        Name: '&6קופסת קסם - מטורף'
+        Material: ENDER_CHEST
+        Price: 26
+        Lore:
+        - '&7מכילה את הפריטים הבאים'
+        - ''
+        - '&aפריטים נפוצים&7: &b0'
+        - '&9פריטים נדירים&7: &b1'
+        - '&5פריטים מדהימים&7: &b2'
+        - '&6םריטים אגדיים&7: &b4'
+        - ''
+        - '&7איכות: &e✰✰✰✰✰'
+        Show: true
+        Slot: 17
+  Gift-Inventory-Menu:
+    GUI-Name: תפריט מתנות
+    Items:
+      Mystery-Gift:
+        Name: '&a5 קופסות קסם במתנה'
+        Material: ENDER_CHEST
+        Lore:
+        - '&7המתנה הזאת מכילה כ-&a5'
+        - '&bקופסות קסם&7.'
+        - ''
+        - '&eלחץ כדי לשלוח מתנה לשחקן.'
+      Error:
+        Name: '&cשגיאה!'
+        Material: RED_STAINED_GLASS_PANE
+        Lore:
+        - '&7אין לך &bמתנות זמינות&7'
+  Send-Gift-Menu:
+    GUI-Name: שחקנים מחוברים
+    Items:
+      Mystery-Gift:
+        Name: '&a5 קופסות קסם במתנה'
+        Material: ENDER_CHEST
+        Lore:
+        - '&7המתנה הזאת מכילה כ-&a5'
+        - '&bקופסות קסם&7.'
+        - ''
+        - '&bבחר למי לשלוח את המתנה!'
+      Player:
+        Lore:
+        - ''
+        - '&aלחץ כדי לשלוח את המתנה לשחקן!'
+  Confirm-Send-Gift-Menu:
+    GUI-Name: אישור שליחת מתנה
+    Items:
+      Player:
+        Name: '&7{PLAYER}'
+        Lore: ''
+      Mystery-Gift:
+        Name: '&a5 קופסות קסם במתנה'
+        Material: ENDER_CHEST
+        Lore:
+        - '&7המתנה הזאת מכילה כ-&a5'
+        - '&bקופסות קסם&7.'
+      Confirm:
+        Name: '&aאשר'
+        Material: LIME_TERRACOTTA
+        Lore: ''
+      Cancel:
+        Name: '&cבטל'
+        Material: RED_TERRACOTTA
+        Lore: ''
+  Settings-Menu:
+    GUI-Name: הגדרות
+    Items:
+      Ignore-Cooldown:
+        Name: '&aהתעלמות מזמן המתנה'
+        Material: BARRIER
+        Show: true
+        Slot: 20
+        Lore: ''
+      Self-Morph-View:
+        Name: '&aראיית שינוי צורה עצמי'
+        Material: ENDER_EYE
+        Show: true
+        Slot: 24
+        Lore: ''
+      Enabled:
+        Name: '&aאשר'
+        Material: LIME_WOOL
+        Lore: ''
+      Disabled:
+        Name: '&cבטל'
+        Material: RED_WOOL
+        Lore: ''
+  Mystery-Vault-Animations-Menu:
+    GUI-Name: אנימציות לפתיחת קופסות קסם
+    Items:
+      Random-Mystery-Vault-Animation:
+        Name: '&eאנימציה אקראית'
+        Material: ENDER_PEARL
+        Show: true
+        Slot: 40
+        Lore:
+        - '&7תן לנו להחליט עבורך'
+        - '&7את האנימציה שתרצה'
+        - ''
+        - '&bמצב: {STATUS}'
+        - ''
+  Open-Multiple-Boxes-Menu:
+    GUI-Name: תפריט פתיחת מספר קופסות קסם
+    Items:
+      Open-20-Boxes:
+        Name: '&aפתח 20 קופסות קסם'
+        Material: NETHER_STAR
+        Lore:
+        - '&7פתיחת 20 קופסות קסם'
+        - '&7בו זמנית.'
+      Open-50-Boxes:
+        Name: '&aפתח 50 קופסות קסם'
+        Material: NETHER_STAR
+        Lore:
+        - '&7פתיחת 50 קופסות קסם'
+        - '&7בו זמנית.'
+      Open-250-Boxes:
+        Name: '&aפתח 250 קופסות קסם'
+        Material: NETHER_STAR
+        Lore:
+        - '&7פתיחת 250 קופסות קסם'
+        - '&7בו זמנית.'
+  Confirm-Open-Multiple-Boxes-Menu:
+    GUI-Name: אישור פתיחת כמה קופסות קסם
+    Items:
+      Confirm:
+        Name: '&aאשר'
+        Material: LIME_TERRACOTTA
+        Lore: ''
+      Cancel:
+        Name: '&cבטל'
+        Material: RED_TERRACOTTA
+        Lore: ''
+Items:
+  Go-Back:
+    Name: '&eחזור'
+    Material: ARROW
+    Show: true
+    Lore: ''
+  Previous-Page:
+    Name: '&eעמוד קודם'
+    Material: ARROW
+    Lore:
+    - '&eעמוד {PAGE}'
+  Next-Page:
+    Name: '&eעמוד הבא'
+    Material: ARROW
+    Lore:
+    - '&eעמוד {PAGE}'
+  Already-Selected:
+    Show-In-Lore: true
+    Lore:
+    - ''
+    - '&7כבר נבחר'
+  Click-To-Select:
+    Show-In-Lore: true
+    Lore:
+    - ''
+    - '&eלחץ כדי לבחור'
+  Unlocked:
+    Show-In-Lore: true
+    Lore:
+    - ''
+    - '&7פתוח: &c{HASPERMISSION}/{SIZE} &8({PERCENTAGE}%)'
+    - ''
+    - '&eלחץ לפתיחת התפריט!'
+  Settings:
+    Name: '&eהגדרות'
+    Material: COMPARATOR
+    Show: true
+    Lore:
+    - '&7התאם הגדרות לפי רצונך'
+  MainMenu-Item:
+    Name: '&7תפריט הקוסמג''יק'
+    Material: TRAPPED_CHEST
+    Show: true
+    Lore:
+    - '&7חלקי קסם: &b{MYSTERY_DUST}'
+    - '&7קופסות קסם: &b{MYSTERY_BOXES}'
+    - ''
+    - '&7תהנה ממגוון רחב של קוסמג''יקס!'
+    - '&7יותר ויותר קוסמג''קס יתווספו לאורן הזמן,'
+    - '&7מקווים שאתם נהנים בשרת.'
+  Morph-Slimeball:
+    Name: '&aהפעל כוח שינוי הצורה'
+  Self-Morph-View:
+    Name: '&eראיית שינוי צורה עצמי'
+    Material: ENDER_EYE
+    Show: true
+    Lore:
+    - '&7מצב: {STATUS}'
+    - ''
+    - '&eלחץ כדי להפעיל ראיית שינוי צורה עצמי.'
+  Rename-Pet:
+    Name: '&eתן שם לחית המחמד שלך'
+    Material: NAME_TAG
+    Show: true
+    Lore:
+    - '&7שנה את שם חיית המחמד שלך על ידי כתיבת השם בצאט.'
+  Pages:
+    Name: ' &r(עמוד {CURRENT_PAGE}/{MAX_PAGES})'
+  Enough-Mystery-Dust:
+    Lore:
+    - ''
+    - '&cלחץ כדי ליצור קוספת קסם בעבור &b{COST} &cחלקי קסם!'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Not-Enough-Mystery-Dust:
+    Lore:
+    - ''
+    - '&cלחץ כדי ליצור קוספת קסם בעבור &b{COST} &cחלקי קסם!'
+    - '&cאין מספיק חלקים!'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_ENDERMAN_TELEPORT
+  Enough-Mystery-Dust-To-Craft-Mystery-Box:
+    Lore:
+    - ''
+    - '&7מחיר: &a{COST} &7חלקי קסם'
+    - '&aלחץ כדי ליצור!'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Not-Enough-Mystery-Dust-To-Craft-Mystery-Box:
+    Lore:
+    - ''
+    - '&7Cost: &a{COST} &7Mystery Dust'
+    - '&cאין מספיק חלקי קסם!'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_ENDERMAN_TELEPORT
+  Item-Unpurchasable:
+    Lore:
+    - ''
+    - '&cאת/ה לר יכול ליצור קופסת קסם.'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_ENDERMAN_TELEPORT
+  Failed-To-Purchase:
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_ENDERMAN_TELEPORT
+  Failed-To-Deduct-Mystery-Dust:
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_ENDERMAN_TELEPORT
+  Multiple-Boxes-Loot-Book:
+  - '       &1&lקופסות הקסם'
+  - ''
+  - '&0פתחת מספר קופסות קסם.'
+  - '&0מצאת מספר רב של קוסמג''יקס.'
+  - ''
+  - ' &0פתחת בסך הכל &9&l{MYSTERY_BOXES_OPENED} קוספות קסם'
+  - ''
+  - ''
+  - '&0עבור לעמוד הבא כדי'
+  - '&0לראות את הקוסמג''יקס שהשגת'
+  Settings-Status:
+  - '&e&l{SETTING}'
+  - ''
+  - '  &bמצב: {STATUS}'
+  - ''
+Reset-Buttons:
+  Reset-Cosmetics:
+    Name: '&cאיפוס קוסמג''יק'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Hat:
+    Name: '&cאיפוס כובע'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Animated-Hat:
+    Name: '&cאיפוס כובע אנימציה'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Particle:
+    Name: '&cאיפוס אפקטים'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Suit:
+    Name: '&cאיפוס חליפה'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Gadget:
+    Name: '&cאיפוס ג''אדגטים'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Pet:
+    Name: '&cאיפוס חיות מחמד'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Morph:
+    Name: '&cאיפוס שינוי צורה'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Banner:
+    Name: '&cאיפוס דגלים'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Emote:
+    Name: '&cאיפוס רגשות'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Cloak:
+    Name: '&cאיפוס גלימה'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+Cooldown-In-Action-Bar:
+  Enabled: true
+  Cooldown-Block:
+    Remain: '&c|'
+    Retain: '&a|'
+    Amount-Of-Blocks: 100
+  Cooldown-Message: '{NAME} &f{COOLDOWN_BLOCK} &f{TIME_LEFT}s'
+Item-Purchase-Messages:
+  Purchase-Hat: '{PREFIX}&eאתה רכשת את {ITEM}&e.'
+  Purchase-Animated-Hat: '{PREFIX}&eאתה רכשת את {ITEM}&e.'
+  Purchase-Particle: '{PREFIX}&eאתה רכשת את {ITEM}&e.'
+  Purchase-Suit: '{PREFIX}&eאתה רכשת את {ITEM}&e.'
+  Purchase-Gadget: '{PREFIX}&eאתה רכשת את {ITEM}&e.'
+  Purchase-Pet: '{PREFIX}&eאתה רכשת את {ITEM}&e.'
+  Purchase-Morph: '{PREFIX}&eאתה רכשת את {ITEM}&e.'
+  Purchase-Banner: '{PREFIX}&eאתה רכשת את {ITEM}&e.'
+  Purchase-Emote: '{PREFIX}&eאתה רכשת את {ITEM}&e.'
+  Purchase-Cloak: '{PREFIX}&eאתה רכשת את {ITEM}&e.'
+Checking-For-Update: '{PREFIX}&rבודק עדכונים...'
+Cooldown: '{PREFIX}&cאתה חייב להמתין &b{COOLDOWN} שניות &cלפני לניסיון נוסף!'
+Error: '{PREFIX}&cאירעה שגיאה בעת ביצוע פעולה זו!'
+No-Permission: '{PREFIX}&cאין לך את ההרשאה הנדרשת {PERMISSION}!'
+World-Disabled: '{PREFIX}&cאין לך רשות לעשות את זה בעולם הזה!'
+Scanning-Player-Data-Files: '{PREFIX}&eסורק פרטי שחקן שמורים...'
+Deleted-Player-Data-Files: '{PREFIX}&c{DELETED_FILES} &eקובץ/קבצים נמחקו ועכשיו &a{NON_DELETED_FILES}
+  &eקובץ/קבצים נשארו.'
+Folder-Is-Empty: '{PREFIX}&cלא מוצא פרטי שחקן שמורים.'
+Banners-Are-Disabled: '{PREFIX}&cקוסמג''יקס הדגלים מושבתים!'
+Cloaks-Are-Disabled: '{PREFIX}&cקוסמג''יקס הגלימות מושבתים!'
+Emotes-Are-Disabled: '{PREFIX}&cקוסמג''יקס הרגשות מושבתים!'
+Gadgets-Are-Disabled: '{PREFIX}&cקוסמג''יקס הגאדג''טים מושבתים!'
+Hats-Are-Disabled: '{PREFIX}&cקוסמג''יקס הכובעים מושבתים!'
+Animated-Hats-Are-Disabled: '{PREFIX}&cקוסמג''יקס כובעי האנימציה מושבתים!'
+Morphs-Are-Disabled: '{PREFIX}&cקוסמג''יקס שיוני הצורה מושבתים!'
+Particles-Are-Disabled: '{PREFIX}&cקוסמג''יקס האפקטים מושבתים!'
+Pets-Are-Disabled: '{PREFIX}&cקוסמג''יקס חיות המחמד מושבתים!'
+Suits-Are-Disabled: '{PREFIX}&cקוסמג''יקס החליפות מושבתים!'
+Equip-Animated-Hat-For-Player: '&eהצטיידת {ANIMATED_HAT} לשחקן &b{PLAYER}&e.'
+Equip-Banner-For-Player: '&eהצטיידת {BANNER} לשחקן &b{PLAYER}&e.'
+Equip-Cloak-For-Player: '&eהצטיידת {CLOAK} לשחקן &b{PLAYER}&e.'
+Equip-Emote-For-Player: '&eהצטיידת {EMOTE} לשחקן &b{PLAYER}&e.'
+Equip-Gadget-For-Player: '&eהצטיידת {GADGET} לשחקן &b{PLAYER}&e.'
+Equip-Hat-For-Player: '&eהצטיידת {HAT} לשחקן &b{PLAYER}&e.'
+Equip-Morph-For-Player: '&eאתה שינית צורה מ &b{PLAYER} &eלכמו {MORPH}&e.'
+Equip-Particle-For-Player: '&eהצטיידת {PARTICLE} for &b{PLAYER}&e.'
+Equip-Pet-For-Player: '&eזומן {PET} &eחיית מחמד של &b{PLAYER}.'
+Equip-Suit-For-Player: '&eהצטיידת {SUIT} לשחקן &b{PLAYER}&e.'
+Select-Animated-Hat: '&eאתה בחרת ב{ANIMATED_HAT}&e.'
+Select-Banner: '&eאתה בחרת ב{BANNER}&e.'
+Select-Cloak: '&eאתה בחרת ב{CLOAK}&e.'
+Select-Emote: '&eאתה בחרת ב{EMOTE}&e.'
+Select-Gadget: '&eאתה בחרת ב{GADGET}&e.'
+Select-Hat: '&eאתה בחרת ב{HAT}&e.'
+Select-Morph: '&eאתה שינית צורה ל {MORPH}&e.'
+Select-Particle: '&eאתה בחרת ב {PARTICLE}&e.'
+Select-Pet: '&eזימנת את {PET} &eכחיית מחמד.'
+Select-Suit: '&eאתה בחרת ב {SUIT}&e.'
+Reset-Animated-Hat: '&eאופס את כובע האנימציה שבחרת.'
+Reset-Banner: '&eאופס את הדגל שבחרת.'
+Reset-Cloak: '&eאופס את הגלימה שבחרת.'
+Reset-Cosmetics: '&eאופסו את הקוסמג''יקס הפועלים.'
+Reset-Emote: '&eאופס את הרגש שבחרת.'
+Reset-Gadget: '&eאופס את הגאדגט שבחרת.'
+Reset-Hat: '&eאופס את הכובע שבחרת.'
+Reset-Morph: '&eאופס את שינוי הצורה.'
+Reset-Particle: '&eאופס את האפקט שבחרת.'
+Reset-Pet: '&eאפוס את חיית המחמד שבחרת.'
+Reset-Suit: '&eאופס את החליפה שבחרת.'
+Reset-Suit-Helmet: '&eאופס את הקסדה שבחרת.'
+Reset-Suit-Chestplate: '&eאופס את החולצה שבחרת.'
+Reset-Suit-Leggings: '&eאופס את המכנסיים שבחרת.'
+Reset-Suit-Boots: '&eאופס את הנעליים שבחרת.'
+Cosmetic-Reset-Completed: '&eאיפוס הקוסמג''יקס הסתיים.'
+Characters-Too-Long: '{PREFIX}&cשם חיית המחמד לא יכול להיות ארוך יותר מכ{CHARACTERS}
+  תוווים!'
+Does-Not-Support-Characters: '{PREFIX}&cאתה יכול להשתמש רק בשפות אנגלית ועברית לשם
+  חיית המחמד שלך.'
+Does-Not-Support-Special-Characters: '{PREFIX}&אינך יכול להשתמש בתווים מיוחדים עבור
+  השם.'
+No-Player-Nearby: '{PREFIX}&cאין שחקנים בקרבת מקום!'
+Not-Allowed-From-Console: '{PREFIX}&cאינך יכול להשתמש בפקודה זו מהקונסול!'
+Not-Allow-Teleport-To-That-Location: '{PREFIX}&cאינך רשאי להשתגר למיקום זה!'
+Not-Allow-Cosmetics-In-This-Location: '{PREFIX}&cאינך ראשי בשימוש קוסמג''יקס במיקום
+  זה!'
+Not-Enough-Space: '{PREFIX}&cאין מספיק מקום סביבך או מעליך כדי להשתמש בגאדג''ט הזה!'
+Not-Enough-Space-For-Target-Block: '{PREFIX}&cאין מספיק מקום להשתמש בגאדג''ט הזה בבלוק
+  שאליו לחצת!'
+Not-On-Ground: '{PREFIX}&cאתה חייב להיות על הרצפה כדי להשתמש בזה!'
+Not-On-Flat-Ground: '{PREFIX}&cאתה חייב להיות על רצפה שטוחה כדי להשתמש בזה!'
+Stand-On-Two-Blocks-High: '{PREFIX}&עליך לעמוד בגובה גבוה משני בלוקים של בלוק!'
+Player-Not-Found: '{PREFIX}&cהשחקן לא נמצא!'
+Player-Is-Offline: '{PREFIX}&cהשחקן הזה אינו מחובר!'
+Plugin-Reloaded: '{PREFIX}&3הפאלגין קוסמג''יק התאתחל בהצלחה.'
+Reloading-Plugin: '{PREFIX}&3מאתחל את הפלאגין...'
+Required-Number-Format: '{PREFIX}&cנדרש מספר!'
+Required-Positive-Number: '{PREFIX}&cנדרש מספר חיובי!'
+Target-A-Block: '{PREFIX}&cאתה צריך לכוון על בלוק!'
+Target-A-Player: '{PREFIX}&cאתה צריך לכוון על שחקן!'
+Remove-Item-From-Slot-To-Equip-Gadget: '{PREFIX}&cעליך להסיר את הפריט מהסלוט ה {SLOT}(&b{ITEM}&c)
+  כדי לקבל את הגאדגט!'
+Remove-Item-From-Slot-To-Equip-Morph: '{PREFIX}&cYעליך להסיר את הפריט מהסלוט ה {SLOT}(&b{ITEM}&c)
+  כדי לקבל את שינוי הצורה!'
+Remove-Item-From-Slot-To-Equip-Emote: '{PREFIX}&cעליך להסיר את הפריט מהסלוט ה {SLOT}(&b{ITEM}&c)
+  כדי לקבל את הרגש!'
+Remove-Helmet-To-Equip-Hat: '{PREFIX}&cעלייך להסיר את הכובע הקיים כדי לקבל את הכובע
+  שבחרת!'
+Remove-Helmet-To-Equip-Animated-Hat: '{PREFIX}&cעלייך להסיר את הכובע הקיים כדי לקבל
+  את כובע האנימציה שבחרת!'
+Remove-Helmet-To-Equip-Banner: '{PREFIX}&cעעלייך להסיר את הכובע הקיים כדי לקבל את
+  הדגל שבחרת!'
+Remove-Helmet-To-Equip-Emote: '{PREFIX}&עלייך להסיר את הכובע הקיים כדי לקבל את הרגש
+  שבחרת!'
+Remove-Armor-To-Equip-Suit: '{PREFIX}&cעלייך להסיר את הארמור הקיים כדי לקבל את החליפה
+  שבחרת!'
+Failed-To-Purchase: '&cקבלת פריט הרכישה שלך נכשלה!'
+Item-Unpurchasable: '{PREFIX}&cאתה לא יכול לרכוש פריט זה!'
+Player-Not-Enough-MysteryDust: '{PREFIX}&cיש לך רק &b{MYSTERY_DUST} &cחלקי קסם!'
+Added-MysteryDust: '{PREFIX}&eהוספת בהצלחה &b{MYSTERY_DUST} &eחקלי קסם לשחקן &b{PLAYER}&e.'
+Added-MysteryDust-To-All-Players: '{PREFIX}&eהוספת בהצלחה &b{MYSTERY_DUST} &eחלקי
+  קסם לכל &b{ONLINE} &eהשחקנים המחוברים(s).'
+Check-MysteryDust: '&eלשחקן {PLAYER} יש &b{MYSTERY_DUST} &eחלקי קסם.'
+Received-MysteryDust: '{PREFIX}&eאתה קיבלת &b{MYSTERY_DUST} &eחלקי קסם מהשחקן &b{PLAYER}&e.'
+Removed-MysteryDust: '{PREFIX}&eאתה הסרת &b{MYSTERY_DUST} &eחלקי קסם מהשחקן &b{PLAYER}&e.'
+Sent-MysteryDust: '{PREFIX}&eאתה שלחת &b{MYSTERY_DUST} &eחלקי קסם לשחקן &b{PLAYER}&e.'
+Set-MysteryDust: '{PREFIX}&eאתה קבעת &b{MYSTERY_DUST} &eחלקי קסם בשביל השחקן &b{PLAYER}&e.'
+Only-Have-MysteryDust: '{PREFIX}&bלשחקן {PLAYER} &cיש רק &b{MYSTERY_DUST} &cחלקי קסם!'
+Removed-MysteryDust-From-Player: '{PREFIX}&b{MYSTERY_DUST} &חלקי קסם נלקחו מהחשבון
+  שלך.'
+Set-Player-MysteryDust: '{PREFIX}&eכמות חלקי הקסם שלך שונו ל&b{MYSTERY_DUST}&e.'
+Not-Enough-MysteryDust-To-Purchase: '{PREFIX}&cמצטערים, אין לך מספיק חלקי קסם כדי
+  לרכוש פריט זה!'
+Pay-MysteryDust-To-Self: '{PREFIX}&cאתה לא יכול לשלם חלקי קסם לעצמך!'
+Failed-To-Deduct-Mystery-Dust: '{PREFIX}&cלא הצלחת לנכות את חלקי הקסם שלך. בבקשה נסה
+  שוב.'
+Gave-Mystery-Boxes: '{PREFIX}&eאתה נתת בהצלחה &b{MYSTERY_BOXES} קופסות קסם &eלשחקן
+  &b{PLAYER}&e.'
+Gave-Mystery-Boxes-To-All-Players: '{PREFIX}&eאתה נתת בהצלחה &b{MYSTERY_BOXES} קופסות
+  קסם &eל&b{ONLINE} &eplayer(s).'
+Received-Mystery-Boxes: '{PREFIX}&eקבילת &b{MYSTERY_BOXES} קופסות קסם &eמהשחקן &b{PLAYER}&e.'
+Added-Mystery-Vault: '{PREFIX}&aיצרת בהצלחה את מכונת הקסם בשם &f''{NAME}''&a.'
+Redefined-Mystery-Vault: '{PREFIX}&aהמיקום של מכונת הקסם בשם &f''{NAME}'' &aשונה.'
+Mystery-Vault-Same-Location: '{PREFIX}&cאתה כבר יצרת מכונת קסם באזור הזה!'
+Mystery-Vault-Is-Exists: '{PREFIX}&cקיימת מכונת קסם עם השם הנל!'
+Do-Not-Have-Any-Mystery-Vault: '{PREFIX}&cלא יצרת אף מכונת קסם!'
+No-Mystery-Vault-Nearby: '{PREFIX}&cלא נמצאה אף מכונת קסם ברדיוס הניתן!'
+Removed-Mystery-Vault: '{PREFIX}&aהוסרה בהצלחה קופסת הקסם &f''{NAME}''&a.'
+Mystery-Vault-Not-Found: '{PREFIX}&cלא נמצא אף מכונת קסם באזור הזה!'
+Mystery-Vault-Not-Found-With-Name: '{PREFIX}&cלא נמצא מכוסת קסם בשם &f''{NAME}''&c!'
+Teleport-To-Mystery-Vault: '{PREFIX}&eאתה שוגרת למכוסת הקסם בשם &f''{NAME}''&e.'
+Open-Mystery-Vault-At-A-Time: '{PREFIX}&cרק שחקן אחד יכול להשתמש במכונת הקסם בכל פעם!'
+Can-Only-Open-One-Mystery-Box: '{PREFIX}&cהמתן עד שהקופסה הזו תסיים להיפתח תחילה!'
+Purchase-Cancelled: '{PREFIX}&cהקניייה בוטלה!'
+Mystery-Boxes-Are-Disabled: '{PREFIX}&cקופסת קסם מבוטלת!'
+Crafted-Mystery-Box: '&aאתה יצרת &b{NAME}&a.'
+Gave-Mystery-Gifts: '{PREFIX}&eנתת בהצלחה &b{GIFTS} &eקופסות קסם&e לשחקן &r{PLAYER}&e.'
+Received-Mystery-Gifts: '{PREFIX}&eאתה קיבלת &b{GIFTS} &eקופסות קסם&e מהשחקן &r{PLAYER}&e.'
+Send-A-Gift-To-Player: '&aאתה שולח מתנה המכילה &bכ5 קופסות קסם &aלשחקן &r{PLAYER}&a!'
+Received-Gift: '&aקיבלת מתנה קוספת קסם מהשחקן &r{PLAYER}&a! בקר &bבמכונת הקשם &aלכדי
+  לפתוח את המתנה!'
+Mystery-Box-Was-Expired: '{PREFIX}&פג תוקף קופסת הקסם הזו. אנא פתח את קופסת הקסם שלך
+  לפני שתוקפו יפוג.'
+Check-Mystery-Boxes: '&eלשחקן {PLAYER} יש &b{MYSTERY_BOXES} &eקופסות קסםs.'
+Select-Mystery-Vault-Animation: '&eאתה בחרת באנימציה &b{ANIMATION} &eלאנימציות לפתיחת
+  קופסות קסם.'
+Not-Enough-Mystery-Boxes: '&cאין לך מספיק קוספות קסם שיפתחו.'
+Counting-Mystery-Boxes: '&cסופר קופסות קסם...'
+Emote-Is-Activated: '{PREFIX}&cהרגש כבר עובד!'
+Gadget-Is-Activated: '{PREFIX}&c{GADGET} כבר עובד!'
+Morph-Skill-Is-Activated: '{PREFIX}&c{MORPH} המיומנות כבר פועלת!'
+Suit-Ability-Is-Activated: '{PREFIX}&c{SUIT} היכולת כבר פועלת!'
+Is-Not-Morphed: '&cאתה לא שינית צורה כרגע!'
+Morph-Ability-Is-Disabled: '{PREFIX}&c{MORPH} היכולת מושבתת כרגע!'
+Rename-Pet: '&e-משנה את שם חיית המחמד שלך ל &a{NAME}&e.'
+Rename-Pet-For-Player: '&eשם חיית המחמד שלך שונה מ {PLAYER} חיית המחמד של ל&a{NAME}&e.'
+Rename-Pet-In-Chat: |-
+  &eיש לך &c20 &eשניות לכתוב שם לחיית המחמד שלך, אנא כתוב את שם חיית המחמד בצאט.
+  &eכתוב &2Cancel &eכדי לבטל את השינוי.
+Timed-Out: '&cזמן שינוי שם חיית המחמד נגמר, לא שינית את השם של חיית המחמד שלך!'
+Cancel-Rename-Pet: '&cבוטל שינוי השם של חיית המחמד שלך.'
+Rocket-Countdown: '&c&lהמראה בעוד {TIMER} {SECOND}!'
+Rocket-Lift-Off: '&a&lהמראנו!!'
+Enabled-Self-Morph-View: '{PREFIX}&eאתה הפעלת ראיית שינוי צורה עצמי!'
+Disabled-Self-Morph-View: '{PREFIX}&eאתה כיבית ראיית שינוי צורה עצמי!'
+Enabled-Bypass-Cooldown: '{PREFIX}&eאתה הפעלת התעלמות מזמן המתנה.'
+Disabled-Bypass-Cooldown: '{PREFIX}&eאתה כיבית התעלמות מזמן המתנה.'
+Enabled-Random-Mystery-Vault-Animation: '{PREFIX}&eאתה &aהפעלת &bאנימציה רנדומלית
+  &eלאנימציות לפתיחת קופסות קסם.'
+Disabled-Random-Mystery-Vault-Animation: '{PREFIX}&eאתה &cכיבית &bאנימציה רנדומלית
+  &eלאנימציות לפתיחת קופסות קסם'
+Disabled-Command-While-Cosmetics-Activated: '{PREFIX}&cאתה לא יכול להשתמש בפקודה הזו
+  בזמן שהקוסמג''יק פועל!'
+Invalid-Type: '{PREFIX}&cהדבר {TYPE} שהזנת אינו חוקי!'
+Type-Is-Not-Enabled: '{PREFIX}&cהדבר {TYPE} לא מופעל!'
+Turn-Off-Bumblebee-Song: '{PREFIX}&cההשיר Bumblebee נכבה כעת!'
+Playing-Song: '{RANDOM_COLOR}השיר שמתנגן כעת: {SONG}'
+Only-Boolean-Value-Can-Be-Accepted: '&cניתן לקבל רק ערך בוליאני!'
+Required-Time-Format: '{PREFIX}&cנא למלא את פורמט הזמן הנכון! (''h'' for hours,''d''
+  for days, ''m'' for months).'
+Required-Full-Data: '{PREFIX}&cאנא ודא שהנתונים שלך לא חסרים.'
+Already-Activate-One: '{PREFIX}&cהגאדגט {GADGET} כבר פועל! נסה יותר מאוחר להפעיל שוב.'
+Gadget-Activated-In-Same-Area: '{PREFIX}&cקיים גאדגט אחר שפועל באותו האזור כעת! נסה
+  להפעיל אותו במקום אחר.'
+Enabled: '&aמופעל'
+Disabled: '&cמכובה'
+Cooldown-Bypass: התעלמות מזמן המתנה
+Self-Morph-View: ראיית שינוי צורה עצמי
+Second: שניה
+Seconds: שניות
+Minute: דקה
+Minutes: דקות
+Hour: שעה
+Hours: שעות
+Day: יום
+Days: ימים
+No-Cosmetic-Equipped: none
+No-Recent-Loot-Found: none
+Loading: '&cטוען...'
+Failed-To-Reload-Plugin: '{PREFIX}&cUnable to reload GadgetsMenu plugin. The plugin
+  has been disabled. You need to restart the server to re-enable the plugin.'

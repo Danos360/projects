@@ -1,0 +1,77 @@
+Animations:
+  None:
+    Name: '&aבלי אנימציה'
+    Material: BARRIER
+    Enabled: true
+    Mini-Block:
+      Material: ENDER_CHEST
+    Lore:
+    - ''
+  Normal:
+    Name: '&aאנימציה נורמלית'
+    Material: ENDER_CHEST
+    Enabled: true
+    Mini-Block:
+      Material: ENDER_CHEST
+    Lore:
+    - ''
+  CountDown:
+    Name: '&aאנימצית ספירה לאחור'
+    Material: CLOCK
+    Enabled: true
+    Mini-Block:
+      Material: ENDER_CHEST
+    Lore:
+    - ''
+  Star:
+    Name: '&aאנימצית כוכב'
+    Material: NETHER_STAR
+    Enabled: true
+    Mini-Block:
+      Material: ENDER_CHEST
+    Mystery-Box-Quality-Block:
+      Material: NETHER_STAR
+    Lore:
+    - ''
+  Crafting:
+    Name: '&aאנימצית יצירת קופסת קסם'
+    Material: CRAFTING_TABLE
+    Enabled: true
+    Mini-Block:
+      Material: ENDER_CHEST
+    Mystery-Box-Quality-Block:
+      Material: CRAFTING_TABLE
+      Rotational-Angle:
+        X: 270
+        Y: 0
+        Z: 45
+    Lore:
+    - ''
+  Summer:
+    Name: '&aאנימצית קיץ'
+    Material: SUNFLOWER
+    Enabled: true
+    Mini-Block:
+      Material: head:5a5ab05ea254c32e3c48f3fdcf9fd9d77d3cba04e6b5ec2e68b3cbdcfac3fd
+    Mystery-Box-Quality-Block:
+      Material: SUNFLOWER
+    Lore:
+    - ''
+  Halloween:
+    Name: '&aאנימצית האלווין'
+    Material: JACK_O_LANTERN
+    Enabled: true
+    Mini-Block:
+      Material: JACK_O_LANTERN
+    Lore:
+    - ''
+  Holiday:
+    Name: '&aאנימצית חג'
+    Material: SNOWBALL
+    Enabled: true
+    Mini-Block:
+      Material: head:f5612dc7b86d71afc1197301c15fd979e9f39e7b1f41d8f1ebdf8115576e2e
+    Mystery-Box-Quality-Block:
+      Material: SNOWBALL
+    Lore:
+    - ''
